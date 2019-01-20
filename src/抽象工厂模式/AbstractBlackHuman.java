@@ -6,6 +6,6 @@ public abstract class AbstractBlackHuman implements Human {
 	}
 	
 	public void talk() {
-		System.out.println("黑人会说话，一般听不懂");
+		System.out.println("黑人会说话，一般人听不懂");
 	}
 }
