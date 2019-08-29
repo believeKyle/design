@@ -2,7 +2,7 @@ package 中介者模式;
 
 import java.util.Random;
 
-public class Sale extends AbstractColleague {
+public class Sale extends AbstractColleague{
 	public Sale(AbstractMediator _mediator) {
 		super(_mediator);
 	}

@@ -1,6 +1,7 @@
 package 中介者模式;
 
-public class Stock extends AbstractColleague {
+
+public class Stock extends AbstractColleague{
 	public Stock(AbstractMediator _mediator) {
 		super(_mediator);
 	}
@@ -8,12 +9,12 @@ public class Stock extends AbstractColleague {
 	private static int COMPUTER_NUMBER = 100;
 	
 	public void increase(int number) {
-		COMPUTER_NUMBER += number;
-		System.out.println("库存数量为:" +COMPUTER_NUMBER);
+		COMPUTER_NUMBER  = COMPUTER_NUMBER + number;
+		System.out.println("库存数量为:"+COMPUTER_NUMBER);
 	}
 	
 	public void decrease(int number) {
-		COMPUTER_NUMBER -= number;
+		COMPUTER_NUMBER = COMPUTER_NUMBER - number;
 		System.out.println("库存数量为:"+COMPUTER_NUMBER);
 	}
 	
@@ -26,3 +27,9 @@ public class Stock extends AbstractColleague {
 		super.mediator.execute("stock.clear");
 	}
 }
+
+
+
+
+
+

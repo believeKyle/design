@@ -1,6 +1,6 @@
 package 中介者模式;
 
-public class Purchase extends AbstractColleague {
+public class Purchase extends AbstractColleague{
 	public Purchase(AbstractMediator _mediator) {
 		super(_mediator);
 	}
@@ -13,6 +13,3 @@ public class Purchase extends AbstractColleague {
 		System.out.println("不再采购IBM电脑");
 	}
 }
-
-
-   
